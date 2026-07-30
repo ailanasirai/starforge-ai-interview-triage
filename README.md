@@ -73,20 +73,13 @@ flowchart TD
 
 ### Data Flow at a Glance
 
-[Full Name, Email, Job Role, Job Description, Interview Question, Raw Answer]
-│
-▼
-Gemini receives structured context
-│
-▼
-Returns: star_answer (HTML) + feedback (HTML)
-│
-┌─────────────┴─────────────┐
-▼ ▼
-Sheet row updated Email sent to candidate
-(STAR_Answer, Feedback cols) (formatted, bold headings)
-
----
+```mermaid
+flowchart TD
+    A["Full Name, Email, Job Role,<br/>Job Description, Interview Question,<br/>Raw Answer"] --> B[Gemini receives<br/>structured context]
+    B --> C["Returns: star_answer (HTML)<br/>+ feedback (HTML)"]
+    C --> D[Sheet row updated<br/>STAR_Answer, Feedback cols]
+    C --> E[Email sent to candidate<br/>formatted, bold headings]
+```
 
 ## ⚙️ Tech Stack
 
@@ -231,9 +224,11 @@ Each run was verified at three checkpoints: **Sheet row update → email arrival
 
 **Aila Nasir** — Final-year CS student, aspiring AI/ML Engineer with a Generative AI focus.
 
-🔗 [LinkedIn](https://www.linkedin.com/in/aila-nasir/) 
-· [GitHub](https://github.com/ailanasirai) 
-· [Kaggle](https://kaggle.com/ailanasirai)
+| | |
+|---|---|
+| 🔗 LinkedIn | [linkedin.com/in/aila-nasir](https://www.linkedin.com/in/aila-nasir/) |
+| 💻 GitHub | [github.com/ailanasirai](https://github.com/ailanasirai) |
+| 📊 Kaggle | [kaggle.com/ailanasirai](https://kaggle.com/ailanasirai) |
 
 ---
 
